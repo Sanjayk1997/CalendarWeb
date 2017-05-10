@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <script src="script/jquery-3.2.1.js">
+    </script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/layout.css">
+    <title></title>
+  </head>
+  <body>
+
+
+  <div class="header">
+    <p>DAILENDAR</p>
+    <!--<span class="tooltip">Click dates to store your events!</span>-->
+  </div>
+  <div class="account">
+    <p id="nAc"></p>
+  </div>
+  <div class="accdet">
+    <button type="button" class="acdet">Account </button><br>
+    <button type="button" class="pset">Privacy</button><br>
+    <form action="logout.php"/>
+    <input type="submit" class="logout" value="Logout">
+  </form>
+  </div>
+
+  <div class="month">
+    <p id="mn"></p>
+  </div>
+
+  <input type="button" class="button1" onclick="clear1(),nextMonth()" value="next">
+  <input type="button" class="button2" onclick="clear1(),prevMonth()" value="prev">
+  <p></p>
+
+
+   <table class="highlight" id="calTable" cellspacing="3";>
+       <tr>
+          <th id='1'></th>
+          <th id='2'></th>
+          <th id='3'></th>
+          <th id='4'></th>
+          <th id='5'></th>
+          <th id='6'></th>
+          <th id='7'></th>
+        </tr>
+        <tr>
+          <td id='8' onclick="openWindow(this)"></td>
+          <td id='9' onclick="openWindow(this)"></td>
+          <td id='10' onclick="openWindow(this)"></td>
+          <td id='11' onclick="openWindow(this)"></td>
+          <td id='12' onclick="openWindow(this)"></td>
+          <td id='13' onclick="openWindow(this)"></td>
+          <td id='14'></td>
+        </tr>
+        <tr>
+          <td id='15' onclick="openWindow(this)"></td>
+          <td id='16' onclick="openWindow(this)"></td>
+          <td id='17' onclick="openWindow(this)"></td>
+          <td id='18' onclick="openWindow(this)"></td>
+          <td id='19' onclick="openWindow(this)"></td>
+          <td id='20' onclick="openWindow(this)"></td>
+          <td id='21' onclick="openWindow(this)"></td>
+        </tr>
+        <tr>
+          <td id='22' onclick="openWindow(this)"></td>
+          <td id='23' onclick="openWindow(this)"></td>
+          <td id='24' onclick="openWindow(this)"></td>
+          <td id='25' onclick="openWindow(this)"></td>
+          <td id='26' onclick="openWindow(this)"></td>
+          <td id='27' onclick="openWindow(this)"></td>
+          <td id='28' onclick="openWindow(this)"></td>
+        </tr>
+        <tr>
+          <td id='29' onclick="openWindow(this)"></td>
+          <td id='30' onclick="openWindow(this)"></td>
+          <td id='31' onclick="openWindow(this)"></td>
+          <td id='32' onclick="openWindow(this)"></td>
+          <td id='33' onclick="openWindow(this)"></td>
+          <td id='34' onclick="openWindow(this)"></td>
+          <td id='35' onclick="openWindow(this)"></td>
+        </tr>
+        <tr>
+          <td id='36' onclick="openWindow(this)"></td>
+          <td id='37' onclick="openWindow(this)"></td>
+          <td id='38' onclick="openWindow(this)"></td>
+          <td id='39' onclick="openWindow(this)"></td>
+          <td id='40' onclick="openWindow(this)"></td>
+          <td id='41' onclick="openWindow(this)"></td>
+          <td id='42' onclick="openWindow(this)"></td>
+        </tr>
+        <tr>
+          <td height="54" id='43' onclick="openWindow(this)"></td>
+          <td height="54" id='44' onclick="openWindow(this)"></td>
+          <td height="54" id='45' onclick="openWindow(this)"></td>
+          <td height="54" id='46' onclick="openWindow(this)"></td>
+          <td height="54" id='47' onclick="openWindow(this)"></td>
+          <td height="54" id='48' onclick="openWindow(this)"></td>
+          <td height="54" id='49' onclick="openWindow(this)"></td>
+        </tr>
+
+
+
+    </table>
+
+    <table class="events">
+      <tr>
+        <th id="date1"></th>
+      </tr>
+      <tr>
+        <td>
+          <ul class="list">
+            <li id="100"></li>
+            <li id="101"></li>
+            <li id="102"></li>
+            <li id="103"></li>
+            <li id="104"></li>
+            <li id="105"></li>
+            <li id="106"></li>
+            <li id="107"></li>
+          </ul>
+
+        </td>
+      </tr>
+    </table>
+
+
+    <div id="Prompt" class="prompt">
+
+      <div class="promptContent">
+        <div class="promptHeader">
+          <span class="close">close</span>
+          <p>Enter Event Details</p>
+        </div>
+        <div class="promptBody">
+          <br>
+          <br>
+          <input type="text" name="Event" id="event" placeholder="event">&nbsp&nbsp&nbsp&nbsp
+          <button type="button" class"submit" onclick="eventSend()">&nbsp&nbsp&nbspAdd&nbsp&nbsp&nbsp</button>
+          <br>
+          <br>
+        </div>
+        <div class="promptFooter">
+          <h3><br><br></h3>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+        <script src="script/script.js"></script>
+
+
+  </body>
+</html>
+
+</table>
