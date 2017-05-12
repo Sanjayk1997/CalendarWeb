@@ -18,7 +18,7 @@
   }
   else{
     $cn = mysqli_connect("localhost","root","","events");
-    $tablename = mysql_real_escape_string($nomDeLaTable);
+    $tablename = mysqli_real_escape_string($cn, $nomDeLaTable);
     $insert = "INSERT INTO `{$tablename}`(dates,event) VALUES ('{$fullDate}','{$event}')";
     $insertion = mysqli_query($cn,$insert);
     echo "1";

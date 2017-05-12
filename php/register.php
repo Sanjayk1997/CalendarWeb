@@ -33,7 +33,7 @@
     if($q1==1){
     echo "User created";
     $connect = mysqli_connect("localhost","root","","events");
-    $savname = mysql_real_escape_string($_POST['username']);
+    $savname = mysqli_real_escape_string($connect, $_POST['username']);
     $creation = "CREATE TABLE `{$savname}` (dates VARCHAR(30),event VARCHAR(30))";
     $create = mysqli_query($connect,$creation);
         }

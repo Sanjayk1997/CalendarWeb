@@ -12,7 +12,7 @@
 
   $con = mysqli_connect("localhost","root","","events");
 
-  $tablename = mysql_real_escape_string($nomDeLaTable);
+  $tablename = mysqli_real_escape_string($con, $nomDeLaTable);
   $getting = "SELECT event from `{$tablename}` where dates={$date}";
   $get = mysqli_query($con,$getting);
 
@@ -20,8 +20,4 @@
     echo $row['event'] . ":";
   }
 
-
-
-
-
- ?>
+?>
